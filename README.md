@@ -1,8 +1,10 @@
 # XTREE
 
-**Developer APIs for real-time social media data** (WeChat, Douyin, Xiaohongshu, Kuaishou, Weibo, Bilibili, TikTok, YouTube) and Taobao item data — raw payloads for accounts, content, media, and comments. **Not** a BI or analytics platform.
+XTREE is a real-time social media data infrastructure for developers and AI agents. It provides structured access to social platform data through REST APIs, a Python SDK, an MCP server, and reusable Skills. It reads live raw data for accounts, posts, video, and comments. It does not publish posts, and it is not a BI or analytics platform.
 
-Website: [www.xtree.io](https://www.xtree.io) · Docs: [www.xtree.io/docs](https://www.xtree.io/docs) · Catalog: [www.xtree.io/catalog](https://www.xtree.io/catalog) · OpenAPI: [api.xtree.io/api/openapi.json](https://api.xtree.io/api/openapi.json)
+Live today: WeChat, Douyin, Xiaohongshu, Kuaishou, Weibo, Bilibili, TikTok, YouTube, and Taobao. The public MCP server currently registers WeChat tools. Other platforms are REST and the Python SDK.
+
+Website: [www.xtree.io](https://www.xtree.io) · Docs: [www.xtree.io/docs](https://www.xtree.io/docs) · API reference: [www.xtree.io/docs/apis](https://www.xtree.io/docs/apis) · Catalog: [www.xtree.io/catalog](https://www.xtree.io/catalog) · Skills: [www.xtree.io/skills](https://www.xtree.io/skills) · OpenAPI: [api.xtree.io/api/openapi.json](https://api.xtree.io/api/openapi.json)
 
 Get an API Key: [sign up on xtree.io](https://www.xtree.io/login?tab=signup) → set `XTREE_API_KEY` → pay per call from wallet (CNY). Incomplete delivery is not billed. Bulk / bank transfer: [business@xtree.io](mailto:business@xtree.io).
 
@@ -12,7 +14,7 @@ Get an API Key: [sign up on xtree.io](https://www.xtree.io/login?tab=signup) →
 |------|---------------|-----|
 | [xtree-python](https://github.com/xtree-io/xtree-python) | Python SDK + CLI | Scripts & backends |
 | [xtree-sdk](https://github.com/xtree-io/xtree-sdk) | `npm install` TypeScript client | Node / web backends |
-| [xtree-mcp](https://github.com/xtree-io/xtree-mcp) | `uvx xtree-mcp` | Cursor / Claude / any MCP host |
+| [xtree-mcp](https://github.com/xtree-io/xtree-mcp) | `uvx --from git+https://github.com/xtree-io/xtree-mcp.git xtree-mcp` | Cursor / Claude; WeChat tools |
 | [xtree-examples](https://github.com/xtree-io/xtree-examples) | Copy-paste scenarios | Learn by running |
 | [xtree-skills](https://github.com/xtree-io/xtree-skills) | Official `SKILL.md` packs | Agent workflows (fetch data only) |
 
